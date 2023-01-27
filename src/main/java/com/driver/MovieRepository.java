@@ -17,8 +17,7 @@ public class MovieRepository {
     public String addMovie(Movie movie){
         for(int i=0;i<mv.size();i++){
             Movie m = mv.get(i);
-            if(m.getName().equals(movie.getName()) && m.getDurationInMinutes() ==
-                    movie.getDurationInMinutes() && m.getImdbRating() == movie.getImdbRating()){
+            if(m.getName().equals(movie.getName()) && m.getDurationInMinutes() == movie.getDurationInMinutes() && m.getImdbRating() == movie.getImdbRating()){
                 return "Movie already added.";
             }
         }
